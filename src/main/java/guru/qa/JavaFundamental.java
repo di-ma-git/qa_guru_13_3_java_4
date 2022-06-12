@@ -38,17 +38,17 @@ public class JavaFundamental {
         System.out.println("overflow max value  a = " + (a * 5000)); // error
         System.out.println("overflow min value  b = " + (c - 2147483647)); // error
         System.out.println("division c / b = " + (c / b)); // 0
-        System.out.println("postfix increment a" + a++); // 500
-        System.out.println("prefix decrement b" + --b); // 4
+        System.out.println("postfix increment a " + a++); // 500
+        System.out.println("prefix decrement b " + --b); // 4
 
+        long d = 12312312312313L;
+        System.out.println("int + long " + (c + d));
 
+        double e = -11.222666666333;
+        System.out.println("int + double " + (c + e));
     }
 
-    public static void booleanOperation() {
-
-    }
-
-    public static void arrayExample() {
+     public static void arrayExample() {
         int[] arExample = new int[] {4324, 2, -800, 221, 67, 0, 15};
         System.out.println("array = " + arExample);
     }
@@ -73,5 +73,7 @@ public class JavaFundamental {
     public static void main() {
         dataTypes();
         operatorsAndOverflow();
+        arrayExample();
+        ifElseComparison();
     }
 }
