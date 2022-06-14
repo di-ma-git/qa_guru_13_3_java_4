@@ -1,5 +1,7 @@
 package guru.qa;
 
+import java.util.Arrays;
+
 public class JavaFundamental {
 
     public static void dataTypes() {
@@ -29,34 +31,36 @@ public class JavaFundamental {
     public static void operatorsAndOverflow() {
         int a = 500;
         int b = 5;
-        int c = -1;
+        int c = -2;
         System.out.println("addition a + b = " + (a + b)); // 505
         System.out.println("subtraction a - b = " + (a - b)); // 495
         System.out.println("multiplication a * b = " + (a * b)); // 2500
         System.out.println("division  a / b = " + (a / b)); // 100
         System.out.println("modulus division  a % b = " + (a % b)); // 0
-        System.out.println("overflow max value  a = " + (a * 5000)); // error
-        System.out.println("overflow min value  b = " + (c - 2147483647)); // error
+        System.out.println("overflow max value = " + (a * 5000000)); // error
+        System.out.println("overflow min value = " + (c - 2147483647)); // error
         System.out.println("division c / b = " + (c / b)); // 0
-        System.out.println("postfix increment a " + a++); // 500
-        System.out.println("prefix decrement b " + --b); // 4
+        System.out.println("postfix increment a = " + a++); // 500
+        System.out.println("prefix decrement b = " + --b); // 4
 
         long d = 12312312312313L;
-        System.out.println("int + long " + (c + d));
+        System.out.println("int + long = " + (c + d));
 
         double e = -11.222666666333;
-        System.out.println("int + double " + (c + e));
+        System.out.println("int + double = " + (c + e));
     }
 
      public static void arrayExample() {
-        int[] arExample = new int[] {4324, 2, -800, 221, 67, 0, 15};
+        int[] arExample = {4324, 2, -800, 221, 67, 0, 15};
+        String arString = Arrays.toString(arExample);
         System.out.println("array = " + arExample);
+        System.out.println("array = " + arString);
     }
 
     public static void ifElseComparison() {
         int score = 70;
 
-        System.out.println("Your score =" + score);
+        System.out.println("Your score = " + score);
 
         if (score < 50) {
             System.out.println("You are not pass");
