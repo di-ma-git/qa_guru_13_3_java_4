@@ -70,7 +70,7 @@ public class JavaFundamental {
     }
 
 
-    public static void main() {
+    public static void main(String[] args) {
         dataTypes();
         operatorsAndOverflow();
         arrayExample();
